@@ -1,2 +1,2 @@
-# chat-app-server
-Chat app Node.js server
+# chat-app
+Chat app build with Node.js server
