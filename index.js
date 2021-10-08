@@ -1,6 +1,6 @@
 const http = require('http');
 
-const hostname = '127.0.0.1';
+const HOST = '127.0.0.1';
 const PORT = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
@@ -9,8 +9,8 @@ const server = http.createServer((req, res) => {
   res.end('Hello World');
 });
 
-server.listen(PORT, hostname, () => {
-  console.log(`Server running at http://${hostname}:${PORT}/`);
+server.listen(PORT, HOST, () => {
+  console.log(`Server running at http://${HOST}:${PORT}/`);
 });
 
 process.on('SIGTERM', () => {
@@ -18,5 +18,3 @@ process.on('SIGTERM', () => {
     console.log('Process terminated');
   });
 });
-
-// TO DO: Add tests
